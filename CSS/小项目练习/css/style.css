@@ -1,0 +1,95 @@
+/*将所有元素自带的margin和padding清除掉*/
+body,ul,p,li,a,div,h2{
+    margin: 0;
+    padding: 0;
+}
+/*清除列表样式*/
+ul{
+    list-style: none;
+}
+/*清除a标签的下划线*/
+a{
+    text-decoration: none;
+    /*text-decoration: underline;添加下划线*/
+}
+/*h2的加粗去掉*/
+h2{
+    font-weight: normal;
+}
+/*字体在设置的时候,如果是短语和汉字,要用引号包起来*/
+/*有关文字的样式都是可继承的,body设置了字体样式,其他元素就会去继承*/
+body{
+    font-family: "Microsoft YaHei";
+    /*font:12px/1.5 "Microsoft YaHei"*/
+}
+.content{
+    margin: 0 auto;
+    width: 1204px;
+    /*background-color: pink;*/
+}
+.content li{
+    box-shadow: 3px 3px 9px #1e1e1e;
+    /*box-shadow: 10px 20px 30px 40px #000 inset;
+    第一个值是x轴方向;
+    第二个值是y轴方向;
+    第三个值是模糊度;
+    第四个值是投影投射半径,一般不写;
+    第五个值是阴影颜色;
+    第六个值,如果不写是外阴影,如果写是内阴影*/
+    display: inline-block;
+    vertical-align: top;
+    /*改变基线对齐方式,顶部对齐*/
+    margin-left: 65px;
+    padding-top: 72px;
+    width: 251px;
+    height: 112px;
+    font-size: 14px;
+}
+.content .img1{
+    background: url("../img/1.jpg") no-repeat;
+}
+.content .img2{
+    background: url("../img/2.jpg") no-repeat;
+}
+.content .img3{
+    background: url("../img/3.jpg") no-repeat;
+}
+.content .img4{
+    background: url("../img/4.jpg") no-repeat;
+}
+
+
+.content ul{
+    margin-left: -65px;
+    font-size: 0;
+}
+.title{
+    padding: 27px 15px 0;
+    height: 47px;
+    line-height: 14px;
+    background: url("../img/white.png");
+}
+.title h2{
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #1e1e1e;
+    /*color: rgb(30,30,30);*/
+}
+/*a不会继承父级文字颜色,永远都需要单独设置*/
+.title a{
+    color: #1e1e1e;
+}
+.title p{
+    padding: 0 13px 0 16px;
+    line-height: 43px;
+    font-size: 12px;
+}
+.content .rmb{
+    color:#c71b1b;
+    padding: 15px;
+}
+.content .right{
+    color: #868484;
+    float: right;
+    padding: 0 13px 14px 0;
+}
